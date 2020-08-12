@@ -6,7 +6,8 @@
 <ul>
   <% @restaurant.reviews.each do |review| %>
     <li>Comment: <%= review.content %><br>
-      Notation: <%= review.rating %> stars</li>
+      Notation: <%= review.rating %> <%=fa_icon "star" %>
+</li>
   <% end %>
 </ul>
 
